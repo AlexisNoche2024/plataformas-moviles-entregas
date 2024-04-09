@@ -1,0 +1,36 @@
+html{
+background-color: #222;
+color:#ee6;
+body{
+    h1{
+        text-align: center;
+    }
+    p{
+        font-family: sans-serif;
+    }
+    h1,h2,h3,h4,h5,h6{
+        color:#eee;
+    }
+    strong{
+        border-bottom: white;
+    }
+    .the-force{
+         background-color: #444;
+    }
+    .light-side{
+        color:#66f;
+    }
+    .dark-side{
+        color:#f33
+    }
+    .og-trilogy{
+        list-style-type: circle;
+    }
+    ul:nth-of-type(2){
+        padding-left: 20px;
+    }
+    ul:nth-of-type(3) li:last-child {
+        margin-top: 20px;
+    }
+}
+}
