@@ -1,0 +1,16 @@
+@media (max-width:400px) {
+
+html body{
+    background-color:rgb(40, 60,80);
+}
+}
+@media (min-width:800px){
+    html h1{
+        text-align: center;
+    }
+}
+@media (orientation:landscape){
+    html article {
+        max-width: 50ch;
+    }
+}
