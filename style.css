@@ -1,0 +1,37 @@
+html{
+    background-color: darkslategrey;
+}
+    
+    body{ 
+        background-color: gray;
+    
+    center h1{
+        
+        border-right: solid purple;
+        border-left: solid purple;
+        border-bottom: solid plum;
+        border-block-start: solid purple; 
+        writing-mode: horizontal-tb;
+        background-color: cornflowerblue;  
+        
+        
+        
+    }
+    #primerc{
+            border-right: solid palevioletred !important;
+            border-left: solid palevioletred !important;
+            border-bottom: solid plum !important;
+            border-block-start: solid palevioletred !important; 
+            writing-mode: horizontal-tb !important;
+            background-color: tan !important;    
+            text-align: center !important; 
+        }
+    .home_ul{
+
+        li{
+        color:lightcyan;
+        text-align: justify;
+    }
+
+    }
+    }
