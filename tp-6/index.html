@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,48 +7,47 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-        <img src="logo.jpg" alt="Bootstrap" width="50" height="50">
-          <a class="navbar-brand" href="#">Offcanvas navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <img src="logo.jpg">
+        <a class="navbar-brand" href="#">Ejercicio 6</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link3</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          Made with Bootstrap
+        </span>
+      </div>
+    </div>
+  </nav>
+    </nav>
+      <div id="carouselExampleSlidesOnly" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
+        <center>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="carta4.jpg">
+               </div>
+          <div class="ctarousel-item">
+            <img src="carta2.jpg">
+          </div>
+          <div class="carousel-item">
+            <img src="carta4.jpg">
+          </center>
           </div>
         </div>
-      </nav>
+      </div>
       //*articulo//*
       <div class="text-center">
         <br>
@@ -75,7 +74,8 @@
             
             Categorizada a nivel nacional como “especie amenazada”, protegida por la Ley Nacional de Conservación de la Fauna, la captura, caza y comercialización de esta especie se encuentra prohibida en todo el territorio nacional.</p>
     </article>
-    <div class="card" style="width: 18rem;">
+    <div class="row g-0">
+    <div class="card sm-6 md-8 l-10" style="width: 18rem;">
         <img src="imagen2.jpg" class="card-img-top" alt="50%s">
         <div class="card-body">
           <h5 class="card-title">Caracteristica</h5>
@@ -84,12 +84,13 @@
             Para los criollos, el aguará guazú encarna la leyenda de lobisón para los criollos. Sin embargo, en la mitología toba es un ser protector y padre de todos los perros.</p>
         </div>
         <br>
+        
         <div class="card-body">
           <a href="#" class="card-link">informacion global</a>
         </div>
       </div>
       <br>
-      <div class="card" style="width: 18rem;">
+      <div class="card sm-6 md-8 l-10" style="width: 18rem;">
         <img src="carta4.jpg" class="card-img-top" alt="50%">
         <div class="card-body">
           <h5 class="card-title">pequeño</h5>
@@ -98,7 +99,8 @@
       </div>
     <br>
     <br>
-    <div class="card" style="width: 18rem;">
+    
+    <div class="card sm-6 md-8 l-10" style="width: 18rem;">
       <img src="carta3.jpg" class="card-img-top" alt="50%">
       <div class="card-body">
         <h5 class="card-title">poster</h5>
@@ -106,13 +108,15 @@
       </div>
     </div>
     <br>
-    <div class="card" style="width: 18rem;">
+    <div class="card sm-6 md-8 l-10" style="width: 18rem;">
         <img src="carta2.jpg" class="card-img-top" alt="50%">
         <div class="card-body">
           <h5 class="card-title">al vientito</h5>
           <p class="card-text">el viento de la vida y habitad</p>
         </div>
       </div>
+    </div>
+  </div>
       <hr>
 
       <div class="text-success">
