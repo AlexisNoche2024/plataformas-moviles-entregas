@@ -42,7 +42,7 @@ console.log("restoDivisionEntera(3,2): ", restoDivisionEntera(3,2))
 // Implementar una función "numeroPi" para devolver el numero PI
 // ejemplo: numeroPi() retorna 3,14...
 function numeroPi(radio){
-    let resultado4=math.PI*radio;
+    let resultado4= Math.PI*radio;
     return resultado4;
 }
 console.log("numeroPi(3): ", numeroPi(3))
@@ -51,8 +51,11 @@ console.log("numeroPi(3): ", numeroPi(3))
 // Implementar una función "numeroRandom" para devolver un número random / aleatorio
 // ejemplo: numeroRandom() retorna 0,123...
 
-console.log("numeroRandom(): ", numeroRandom())
-
+function numeroRandom(number){
+    let random1= randomNumber(number);
+    return random1;
+}
+console.log("numeroRamdon():", numeroRandom(0,1,2,3))
 
 // Implementar una función "mejorNumeroRandom" para devolver un número random entre 2 valores recibidos como parámetros
 // ejemplo: mejorNumeroRandom(1,6) retorna 3
