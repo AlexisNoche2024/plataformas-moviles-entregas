@@ -1,16 +1,54 @@
-@media (max-width:400px) {
-
-html body{
-    background-color:rgb(40, 60,80);
+@media (max-width: 400px){
+    html body{
+        background-color: rgb(40,60,80);
+    }
 }
-}
-@media (min-width:800px){
+@media (min-width: 800px){
     html h1{
-        text-align: center;
+       text-align: center;
     }
 }
 @media (orientation:landscape){
-    html article {
-        max-width: 50ch;
+    html article{
+       width: 50ch;
+    }
+}
+@media (min-height: 200px){
+    html h1{
+        background-color: red;
+    }
+}
+@media print{
+    html p{
+        font-family: serif;
+    }
+}
+@media (prefers-color-scheme: light){
+    html body html h1{
+        color: #111;
+        background-color: #DDD;
+    }
+}
+@media screen and (hover: none){
+    html a{
+        background-color: #212;
+        padding: 2px 5px;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:899px){
+    html img{
+        display:none;
+    }
+}
+@media screen and (min-width:200px) and (max-width:400px){
+    html img{
+        height: 400px;
+        object-fit: cover;
+    }
+}
+@media (resolution > 2dppx){
+    html article{
+        background-color: #667;
     }
 }
