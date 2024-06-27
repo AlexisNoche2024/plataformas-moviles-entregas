@@ -115,7 +115,7 @@ console.log("resultado felizCumpleaños: ", felizCumpleaños(personaEjemplo));
 function sonLaMismaPersona(persona1, persona2) {
     return persona1.nombre==persona2.nombre &&
     persona1.apellido==persona2.apellido &&
-    persona1.edad==persona2.apellido &&
+    persona1.edad==persona2.edad &&
     persona1.documento==persona2.documento;
 }
 console.log("resultado sonLaMismaPersona: ", sonLaMismaPersona(
