@@ -33,7 +33,7 @@ console.log("invertirLista([2,3,4]): ", invertirLista([2,3,4]))
  * - calcularPromedio([2,3,4]) retorna 3
  */
 function calcularPromedio(listaDeNumeros) {
-    const suma=
+    const suma = 0
     listaDeNumeros.reduce((acc,num)=> acc + num, 0);
     return suma / listaDeNumeros.length;
 }
@@ -80,7 +80,7 @@ console.log("crearListaDeNumeros(2,5): ", crearListaDeNumeros(2,5))
  * - ordenarDeMayorAMenor([2,-1,4]) retorna [4,2,-1]
  */
 function ordenarDeMayorAMenor(listaDeNumeros) {
-    return listaDeNumeros.sort((a,b)=>b-a);
+    return listaDeNumeros.sort((a,b)=>{b-a});
 }
 console.log("ordenarDeMayorAMenor([2,3,4]): ", ordenarDeMayorAMenor([2,3,4]))
 console.log("ordenarDeMayorAMenor(listaNumerosEjemplo): ", ordenarDeMayorAMenor(listaNumerosEjemplo))
@@ -118,7 +118,7 @@ console.log("encontrarNumeroMayor(listaNumerosEjemplo): ", encontrarNumeroMayor(
  * - ordenarPalabrasPorLongitud(['abc', 'a', 'ab']) retorna ['a', 'ab', 'abc']
  */
 function ordenarPalabrasPorLongitud(listaDePalabras) {
-    return listaDePalabras.sort((a,b)=> a.length - b.length);
+    return listaDePalabras.sort((a,b)=> {a.length - b.length});
 }
 console.log("ordenarPalabrasPorLongitud(['abc', 'a', 'ab']): ", ordenarPalabrasPorLongitud(['abc', 'a', 'ab']))
 
@@ -136,7 +136,7 @@ console.log("ordenarPalabrasPorLongitud(['abc', 'a', 'ab']): ", ordenarPalabrasP
  * - encontrarPalabraMasCorta(['abc', 'a', 'ab', 'c']) retorna 'a'
  */
 function encontrarPalabraMasCorta(listaDePalabras) {
-    return listaDePalabras.reduce((a,b)=> a.length <=b.length ? a:b);
+    return listaDePalabras.reduce((a,b)=> {a.length <=b.length ? a:b});
 }
 console.log("encontrarPalabraMasCorta(['abc', 'a', 'ab']): ", encontrarPalabraMasCorta(['abc', 'a', 'ab']))
 
@@ -219,9 +219,10 @@ console.log("enumerarLista(): ", enumerarLista(["Han", "Leia", "Luke", "Yoda"]))
 
 function existeNumeroEnLista(numero,lista){
     let encontrado=false;
+    let valorActual=none
     let indiceEncontrado=null;
     for(let i=0;i<lista.length;i++){
-        let valorActual=lista[i];
+        valorActual=lista[i];
         if(valorActual=numero){
             encontrado=true;
             indiceEncontrado=i;
